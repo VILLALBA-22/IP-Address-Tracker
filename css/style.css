@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+}
+.h1 {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+.site-header {
+	height: 35%;
+	background-image: url('../images/pattern-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+	z-index: 1000;
+}
+.ip-form {
+	margin: 20px auto;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	max-width: 450px;
+}
+#ip-input {
+	width: 85%;
+	border-radius: 15px 0 0 15px;
+	outline: none;
+	border: none;
+	padding: 15px;
+}
+.btn-ip {
+	width: 15%;
+	border: none;
+	border-radius: 0 15px 15px 0;
+	background-color: black;
+	cursor: pointer;
+}
+.fa-angle-right {
+	color: white;
+	font-size: 18px;
+}
+.ip-info {
+	background-color: white;
+	border-radius: 15px;
+	overflow-y: visible;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	padding: 0px 20px 20px 20px;
+	z-index: 1000;
+	position: relative;
+	align-content: center;
+	max-width: 1100px;
+}
+.ip-info > div {
+	width: 100%;
+	text-align: center;
+}
+.ip-info > div > h4 {
+	margin-top: 20px;
+	font-size: 8px;
+	color: hsl(0, 0%, 59%);
+	letter-spacing: 1px;
+}
+.ip-info > div > p {
+	margin-top: 5px;
+	color: hsl(0, 0%, 17%);
+	font-weight: 500;
+}
+.map-main {
+	height: 65%;
+}
+
+#mapid {
+	height: 100%;
+	width: 100%;
+}
+@media screen and (min-width: 850px) {
+	.ip-info {
+		flex-direction: row;
+		padding: 0px 30px 30px 30px;
+		text-align: start;
+	}
+	.ip-info > div > h4 {
+		margin-top: 30px;
+		font-size: 12px;
+	}
+	.ip-info > div {
+		text-align: start;
+	}
+	.site-header {
+		padding: 30px;
+	}
+	.ip-form {
+		margin: 30px auto;
+		height: 45px;
+	}
+	.ip-info > div > p {
+		width: 60%;
+		font-size: 22px;
+	}
+}
